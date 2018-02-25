@@ -4,14 +4,15 @@ title: fun buttons
 
 <div id="about">
   <div class="about-content">
-    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
+    <h5>This page was built  for the fun <i class="fa fa-smile-o" aria-hidden="true"></i> based on the article below, just to practice. </h5>
+
+        <div class="btn btn-success space">
+          <a href="https://blog.prototypr.io/stunning-hover-effects-with-css-variables-f855e7b95330", class="article", target="_blank">Original article</a>
+        </div>
+
     <ul class="list-inline">
       <% data.users.each do |user| %>
         <li>
-          <% link_to "https://kitt.lewagon.com/alumni/#{user.github_nickname}", target: "_blank" do %>
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
-          <% end %>
-          <h2><%= user.name %></h2>
           <p>
             <% link_to "https://github.com/#{user.github_nickname}", target: "_blank" do %>
               <i class="fa fa-github"></i> <%= user.github_nickname %>
